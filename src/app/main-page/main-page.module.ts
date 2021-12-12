@@ -4,6 +4,8 @@ import { MainPageComponent } from './main-page.component';
 import { CardModule } from "primeng/card";
 import { PanelModule } from "primeng/panel";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {TableModule} from "primeng/table";
+import {BrowserModule} from "@angular/platform-browser";
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     MainPageComponent
   ],
   imports: [
+    BrowserModule,
     CommonModule,
     CardModule,
     BrowserAnimationsModule,
-    PanelModule
+    PanelModule,
+    TableModule
   ]
 })
 export class MainPageModule { }
