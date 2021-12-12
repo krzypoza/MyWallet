@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BondService } from "../service/bond.service";
+import {Bond} from "../../Model/bond.model";
 
 @Component({
   selector: 'app-main-page',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  value: Bond[] = [];
+
+  constructor( private bondService: BondService) { }
 
   ngOnInit(): void {
+    this.value = this.bondService.getAllBonds();
+    console.log(this.value);
   }
 
 }
