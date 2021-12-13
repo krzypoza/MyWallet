@@ -6,6 +6,7 @@ import { PanelModule } from "primeng/panel";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {TableModule} from "primeng/table";
 import {BrowserModule} from "@angular/platform-browser";
+import {BondTableModule} from "./bond-table/bond-table.module";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {BrowserModule} from "@angular/platform-browser";
     CardModule,
     BrowserAnimationsModule,
     PanelModule,
-    TableModule
+    TableModule,
+    BondTableModule
   ]
 })
 export class MainPageModule { }

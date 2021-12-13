@@ -1,0 +1,22 @@
+<p-card header="card header">
+  <p-panel header="panel-header">
+    <p-table [value]="value">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Ticker</th>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Current Value</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-value>
+        <tr>
+          <td>{{value.ticker}}</td>
+          <td>{{value.name}}</td>
+          <td>{{value.quantity}}</td>
+          <td>{{value.currentValue}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </p-panel>
+</p-card>
